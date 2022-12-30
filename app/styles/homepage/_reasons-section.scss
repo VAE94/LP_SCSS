@@ -1,0 +1,113 @@
+.reasons-container {
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 150px;
+	.reasons-header {
+		h4 {
+			font-size: 30px;
+			font-weight: 900;
+			letter-spacing: 3px;
+			@media (min-width: $md) {
+				font-size: 40px;
+			}
+			@media (min-width: $lg) {
+				font-size: 50px;
+			}
+			@media (min-width: $xl) {
+				font-size: 60px;
+			}
+		}
+
+		.line {
+			display: inline-block;
+			height: 0.5rem;
+			vertical-align: bottom;
+			margin-left: 10px;
+			width: 5%;
+			border-top: 2px solid black;
+		}
+	}
+	.reasons {
+		.posts-container {
+			margin-top: 50px;
+			margin-bottom: 50px;
+
+			@media (min-width: $lg) {
+				display: $grid;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.card {
+				border-radius: 0;
+		
+				.posts {
+					padding: 10px;
+			
+					.post-title {
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						font-weight: 700;
+						text-transform: uppercase;
+						padding-bottom: 30px;
+						letter-spacing: 3px;
+					}
+					.post-body {
+						text-transform: capitalize;
+						line-height: 1.5rem;
+						height: 3rem;
+						overflow: hidden;
+					}
+					small {
+						font-style: italic;
+					
+					}
+				}
+			}
+		}
+		.more-posts {
+			@media (min-width: $lg) {
+				display: $grid;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.card {
+				margin-bottom: 5px;
+				border-radius: 0;
+				@media (min-width: $lg) {
+					margin: 0;
+				}
+				.posts {
+					padding: 10px;
+					.post-title {
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						font-weight: 700;
+						text-transform: uppercase;
+						padding-bottom: 10px;
+					}
+					.post-body {
+						text-transform: capitalize;
+						line-height: 1.5rem;
+						height: 3rem;
+						overflow: hidden;
+
+					}
+					.small {
+						font-style: italic;
+
+					}
+				}
+			}
+		}
+		button {
+			position: absolute;
+			left: 50%;
+			font-weight: 900;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding: 10px 30px;
+			transform: translateX(-50%);
+			margin: 30px auto;
+			border: 2px solid $black;
+		}
+	}
+}

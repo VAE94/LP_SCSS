@@ -1,0 +1,8 @@
+.container-fluid {
+	@include lg {
+		padding: 0 40px;
+	}
+	@include xl {
+		padding: 0 120px;
+	}
+}

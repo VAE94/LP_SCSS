@@ -1,0 +1,135 @@
+.posters-section {
+	width: $full-width;
+	height: 100%;
+	margin-bottom: 100px;
+	background: linear-gradient(to bottom, #fff 0%, #d5d2d2 100%);
+
+	.posters-header {
+		padding-bottom: 50px;
+		h4 {
+			color: $black;
+			font-size: 30px;
+			font-weight: 700;
+			@media (min-width: $md) {
+				font-size: 40px;
+			}
+			@media (min-width: $lg) {
+				font-size: 50px;
+			}
+			@media (min-width: $xl) {
+				font-size: 60px;
+			}
+		}
+		.line {
+			display: inline-block;
+			height: 0.5rem;
+			vertical-align: bottom;
+			width: 5%;
+			border-top: 2px solid black;
+			padding-bottom: 10px;
+		}
+	}
+	.posters {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+
+		.half {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+
+			@include lg {
+				width: calc(50% - 10px);
+			}
+			.poster {
+				width: 100%;
+				opacity: 0.8;
+				@include background(cover, top left, no-repeat);
+				transition: all 0.3s ease;
+				margin-bottom: 10px;
+
+				&:before {
+					content: '';
+					position: relative;
+					display: block;
+					padding-top: 56.25%;
+				}
+
+				&:hover {
+					box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+
+					.links {
+						a {
+							visibility: visible;
+							opacity: 1;
+							transition: all 0.3 ease-in-out;
+						}
+					}
+				}
+
+				padding: 5px;
+				&.big,
+				&.small {
+					margin-bottom: 0;
+				}
+				&.big {
+					width: 100%;
+					&:before {
+						padding-top: 100%;
+					}
+			
+				}
+				&.small {
+					display: flex;
+					justify-content: center;
+					width: 100%;
+				
+
+					@include lg {
+						width: calc(50% - 10px);
+					}
+				}
+			}
+		}
+		.browse-btn {
+			margin: 0 auto;
+			padding: 30px;
+			button {
+				font-weight: 700;
+				font-size: 20px;
+				border: 2px solid $black;
+			}
+		}
+		.links {
+			position: relative;
+			display: $flex;
+			justify-content: space-between;
+			letter-spacing: 3px;
+			animation: all 0.3 ease-in-out;
+			@media (min-width: $lg) {
+				justify-content: center;
+				gap: 350px;
+			}
+
+			a {
+				visibility: hidden;
+				padding: 15px;
+				color: $white;
+				font-size: 12px;
+				font-weight: 700;
+				@media (min-width: $lg) {
+					padding: 10px;
+				}
+			}
+			i {
+				padding-left: 8px;
+				@media (min-width: $lg) {
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+// External resources
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Core
+@import 'variabiles';
+@import 'mixins';
+@import 'reset';
+@import 'layout';
+
+// App
+@import 'common/header';
+@import 'common/footer';
+@import 'homepage/intro';
+@import 'homepage/inclusive-section';
+@import 'homepage/testimonials-section';
+@import 'homepage/reasons-section';
+@import 'homepage/cta-section';
+@import 'homepage/posters-section';

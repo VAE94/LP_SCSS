@@ -1,0 +1,17 @@
+{% extends "partials/layout.html" %} {% block content %}
+
+<!-- Site Header -->
+{% include "partials/common/header.html" %}
+
+<main>
+	{% include "partials/homepage/intro.html" %} 
+	{% include "partials/homepage/inclusive-section.html" %} 
+	{% include "partials/homepage/testimonials-section.html" %} 
+	{% include "partials/homepage/reasons-section.html" %} 
+	{% include "partials/homepage/cta-section.html" %}
+	{% include "partials/homepage/posters-section.html" %}
+
+</main>
+
+<!-- Site Footer -->
+{% include "partials/common/footer.html" %} {% endblock %}

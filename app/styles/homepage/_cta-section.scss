@@ -1,0 +1,47 @@
+.cta-container {
+	width: $full-width;
+	height: 100%;
+	margin-bottom: 150px;
+	@include lg{
+		margin-bottom: 250px;
+	}
+	.img {
+		width: $full-width;
+		height: 100%;
+		display: block;
+		position: absolute;
+		left: 0;
+		opacity: 0.9;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	.caption {
+		position: relative;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		left:0;
+		top: 0;
+		padding: 120px 0;
+		transform:none;
+		color: $white;
+		max-width: 660px;
+		margin: 0 auto;
+
+		p {
+			font-size: 30px;
+			font-weight: 700;
+			padding-bottom: 20px;
+			@media (min-width: $lg) {
+				font-size: 50px;
+			}
+		}
+		small {
+			span {
+				text-transform: capitalize;
+				text-decoration: underline;
+			}
+		}
+	}
+}

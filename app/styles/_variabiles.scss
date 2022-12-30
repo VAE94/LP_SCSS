@@ -1,0 +1,52 @@
+// Variables
+
+//Colors
+$black: #000;
+$white: #fff;
+$dark-gray:#989595;
+$light-gray: #f7f2f2;
+$social-media: #aab8c2;
+
+
+// Size
+$full-width: 100%;
+$full-height: 100%;
+
+// Display
+$flex: flex;
+$block: block;
+$grid: grid;
+$none: none;
+
+// Breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1500px;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: $sm,
+        md: $md,
+        lg: $lg,
+        xl: $xl,
+        xxl: $xxl
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1440px
+) !default;
